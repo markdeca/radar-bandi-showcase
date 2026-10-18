@@ -57,12 +57,13 @@ L'AI segnala, lo studio decide. Per questo ogni risultato passa da regole fisse:
 | AI | Claude (Anthropic API, structured outputs) oppure modelli locali con Ollama, con modalità ibrida e circuit breaker |
 | Dati | SQLite: ogni bando letto una volta, ogni coppia bando/cliente valutata una volta (di nuovo solo se il profilo cambia), ogni avviso inviato una volta |
 | Notifiche | Web app installabile (PWA) con notifiche push senza dati personali, email di riepilogo; Telegram opzionale con codici cliente |
-| Qualità | 29 test automatici (pipeline completa con LLM simulato, scraper, regole, import Excel), ruff, mypy strict |
+| Web app | PWA senza dipendenze esterne (manifest, service worker, Web Push con chiavi VAPID), API FastAPI con sessioni firmate, password scrypt, CSP stretta |
+| Qualità | 45 test automatici (pipeline completa con LLM simulato, web app, notifiche, scraper, regole, import Excel), ruff, mypy strict |
 | Deploy | Docker, utente non root, configurazione da variabili d'ambiente |
 
 ## 📍 Stato
 
-MVP funzionante, in prova con i primi studi. Fonti attive: **Lombardia** e misure **nazionali**; altre regioni e le Camere di commercio sono le prossime. La web app installabile (PWA) per gestire clienti e pratiche, ospitata in UE, è in sviluppo.
+MVP funzionante, in prova con i primi studi. Fonti attive: **Lombardia** e misure **nazionali**; altre regioni e le Camere di commercio sono le prossime. La web app installabile (PWA) funziona in versione di prova: login per studio, bandi abbinati ai clienti, scadenze, stato delle pratiche, notifiche push senza nomi e lettura offline. La messa online su server in UE è il prossimo passo.
 
 Sei un commercialista o un consulente e vuoi provarlo con i tuoi clienti? Contattaci dal profilo GitHub [@markdeca](https://github.com/markdeca).
 
