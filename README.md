@@ -43,6 +43,8 @@ L'AI segnala, lo studio decide. Per questo ogni risultato passa da regole fisse:
 - **Niente importi inventati**: contributi, percentuali e codici ATECO vengono mostrati solo se compaiono alla lettera nel testo del bando; le date devono essere valide e plausibili.
 - **Dubbi dichiarati**: se un requisito non si ricava dal profilo del cliente, l'avviso lo scrive in "Da verificare" invece di darlo per scontato.
 - **Punteggi tenuti a bada**: un cliente che non rispetta un requisito esplicito non supera mai la soglia di notifica, e nemmeno un bando che non finanzia nessuno dei suoi progetti.
+- **Controlli sul testo dopo l'AI**: una dotazione complessiva non viene mai spacciata per contributo massimo, il tipo di agevolazione è confrontato con le parole del bando e la scadenza è accettata solo se scritta nel testo. Ogni correzione è mostrata allo studio come "controllo sui dati".
+- **Funziona anche se l'AI non risponde**: bandi e valutazioni vengono ricavati con regole prudenti, segnati "da verificare" e rifatti con l'AI al giro successivo.
 - **Prefiltro deterministico**: regione, dimensione e tipo di beneficiario chiaramente incompatibili vengono esclusi senza chiamare l'AI. Un dato mancante non esclude mai.
 - **L'AI non sa chi è il cliente**: riceve solo settore, sede, dimensione e progetti, mai il nome o il codice interno.
 - **Pensato per restare in Europa**: la versione per gli studi gira su server e backup di fornitori europei, con notifiche ed email senza nomi dei clienti.
@@ -58,12 +60,12 @@ L'AI segnala, lo studio decide. Per questo ogni risultato passa da regole fisse:
 | Dati | SQLite: ogni bando letto una volta, ogni coppia bando/cliente valutata una volta (di nuovo solo se il profilo cambia), ogni avviso inviato una volta |
 | Notifiche | Web app installabile (PWA) con notifiche push senza dati personali, email di riepilogo; Telegram opzionale con codici cliente |
 | Web app | PWA senza dipendenze esterne (manifest, service worker, Web Push con chiavi VAPID), API FastAPI con sessioni firmate, password scrypt, CSP stretta |
-| Qualità | 45 test automatici (pipeline completa con LLM simulato, web app, notifiche, scraper, regole, import Excel), ruff, mypy strict |
+| Qualità | 58 test automatici (pipeline completa con LLM simulato, web app, notifiche, scraper, regole, import Excel), ruff, mypy strict |
 | Deploy | Docker, utente non root, configurazione da variabili d'ambiente |
 
 ## 📍 Stato
 
-MVP funzionante, in prova con i primi studi. Fonti attive: **Lombardia** e misure **nazionali**; altre regioni e le Camere di commercio sono le prossime. La web app installabile (PWA) funziona in versione di prova: login per studio, bandi abbinati ai clienti, scadenze, stato delle pratiche, notifiche push senza nomi e lettura offline. La messa online su server in UE è il prossimo passo.
+MVP funzionante, in prova con i primi studi. Fonti attive: **Lombardia** e misure **nazionali**; altre regioni e le Camere di commercio sono le prossime. La web app installabile (PWA) funziona in versione di prova: login per studio, bandi abbinati ai clienti, gestione clienti con import ed export Excel, pratiche, scadenze, notifiche push senza nomi e lettura offline. La messa online su server in UE è il prossimo passo.
 
 Sei un commercialista o un consulente e vuoi provarlo con i tuoi clienti? Contattaci dal profilo GitHub [@markdeca](https://github.com/markdeca).
 
