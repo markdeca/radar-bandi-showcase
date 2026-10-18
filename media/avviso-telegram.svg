@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" role="img" aria-label="Esempio di avviso Telegram di Radar Bandi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2350"/>
+      <stop offset="1" stop-color="#1a4fa8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="720" height="560" rx="28" fill="url(#bg)"/>
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <circle cx="60" cy="58" r="20" fill="#ffd479"/>
+    <text x="92" y="52" font-size="19" font-weight="700" fill="#eef4ff">Radar Bandi</text>
+    <text x="92" y="74" font-size="14" fill="#a9c3ea">bot · Studio Ferri &amp; Associati</text>
+
+    <g filter="url(#shadow)">
+      <rect x="40" y="104" width="640" height="420" rx="20" fill="#ffffff"/>
+    </g>
+    <text x="68" y="146" font-size="21" font-weight="700" fill="#0f1d33">📢 Contributi PMI per le fiere internazionali</text>
+    <text x="68" y="172" font-size="21" font-weight="700" fill="#0f1d33">in Lombardia</text>
+    <text x="68" y="206" font-size="16" fill="#5b6b82">🏛 Unioncamere Lombardia</text>
+    <text x="68" y="232" font-size="16" fill="#5b6b82">💶 50% delle spese ammissibili</text>
+    <text x="68" y="258" font-size="16" font-weight="700" fill="#9a6400">⏳ Scadenza tra 18 giorni</text>
+    <line x1="68" y1="282" x2="652" y2="282" stroke="#d9e2ef" stroke-width="2"/>
+    <text x="68" y="314" font-size="17" font-weight="700" fill="#0f1d33">Clienti adatti (2):</text>
+    <text x="68" y="346" font-size="16" fill="#0f1d33">🔥 <tspan font-weight="700">Tessitura Colombo</tspan> · 91/100 · ✅ ammissibile</text>
+    <text x="96" y="370" font-size="15" fill="#4a5870">Milano Unica è una fiera internazionale in Lombardia.</text>
+    <text x="96" y="394" font-size="15" fill="#1565d8">👉 Chiedere il preventivo dello stand.</text>
+    <text x="68" y="430" font-size="16" fill="#0f1d33">⭐ <tspan font-weight="700">Officina Rossi</tspan> · 78/100 · 🟡 da verificare</text>
+    <text x="96" y="454" font-size="15" fill="#9a6400">🔎 Le fiere previste si svolgono in Lombardia?</text>
+    <text x="68" y="496" font-size="16" font-weight="600" fill="#1565d8">🔗 Apri il bando</text>
+    <text x="652" y="496" font-size="13" fill="#93a0b4" text-anchor="end">dati di esempio</text>
+  </g>
+</svg>
