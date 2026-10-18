@@ -45,7 +45,7 @@ L'AI segnala, lo studio decide. Per questo ogni risultato passa da regole fisse:
 - **Punteggi tenuti a bada**: un cliente che non rispetta un requisito esplicito non supera mai la soglia di notifica, e nemmeno un bando che non finanzia nessuno dei suoi progetti.
 - **Prefiltro deterministico**: regione, dimensione e tipo di beneficiario chiaramente incompatibili vengono esclusi senza chiamare l'AI. Un dato mancante non esclude mai.
 - **L'AI non sa chi è il cliente**: riceve solo settore, sede, dimensione e progetti, mai il nome o il codice interno.
-- **Dati in Europa**: server e backup presso fornitori europei; notifiche ed email senza nomi dei clienti.
+- **Pensato per restare in Europa**: la versione per gli studi gira su server e backup di fornitori europei, con notifiche ed email senza nomi dei clienti.
 - **Contenuti del web trattati come dati**: le pagine scaricate sono isolate nel prompt e le istruzioni al loro interno vengono ignorate.
 
 ## 🛠 Tecnologie
